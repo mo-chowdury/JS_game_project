@@ -1,0 +1,76 @@
+/*styling for headings and p element.*/
+h1{
+    color: aqua;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: aliceblue;
+    display: grid;
+    padding-inline-start: 10px;
+    background: red;
+    font-size: larger;
+}
+
+h2 {
+    color: aliceblue;
+    display: grid;
+    align-content: center;
+}
+
+/* the button section with the images*/
+.selections {
+    display: flex;
+    justify-content: center;
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 100ms;
+}
+
+
+.selesction:hover {
+    transform: scale(1.5);
+}
+
+/* player and computer font display styling, increased font size and added background color so it is visible to the player.*/
+.results {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 50px;
+    padding-inline-start: 10px;
+    background: black;
+}
+
+/* number score styling*/
+.result-score {
+    margin-left: .1rem;
+    font-size: .5rem;
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 50px;
+    padding-inline-start: 10px;
+    background: black;
+}
+
+/* color added for the players selection of text to highlight the result as draw/lose.*/
+.result-selection {
+    color: blue;
+}
+
+/* color added text to highlight result as the winner */
+.result-selection.winner {
+    color: yellow;
+}

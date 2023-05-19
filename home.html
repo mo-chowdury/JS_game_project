@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rock, Paper, Scissors - GAME</title>
+    
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <!-- Fav Icon Link-->
+    <link rel="icon" href="images/favicon-32x32.png"/>
+    
+    <!-- background image -->
+    <style type="text/css">
+        body{
+            background-image: url("images/ring-arena.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <!-- Webpage Title -->
+    <h1>The Rock Vs Paper Vs Scissors -Triple Threat Match- LIVE!</h1>
+     
+    <!-- Button wrapped with img within a class div and reference for JS query selector -->
+    <div class="selections">
+        <button class="selection" data-selection="the-rock"><img src="images/the-rock.png"></button>
+        
+        <!-- Title in bold -->
+        <h2><b>VS</b></h2>
+        
+        <button class="selection" data-selection="paper"><img src="images/paper.png"></button>
+        
+        <!-- Title in bold -->
+        <h2><b>VS</b></h2>
+        
+        <button class="selection" data-selection="scissors"><img src="images/scissors.png"></button>
+    </div>
+
+    <!-- paragraph with breaks for space.-->
+    <p>Rules: The Rock Beats Scissors, Paper Beats The Rock, and Scissors Beats Paper!
+        <br>
+        Blue = Draw/Lose! | Yellow = Winner!
+        <br>
+        Best of 3, scroll down.
+    </p>
+    
+    <!-- Scoreboard display names in a div and spanned with class to link with JS. -->
+    <div class="results">
+        <div>
+        Player
+        <span class="result-score" data-player-score>0</span>
+    </div>
+        
+    <div data-final-column>
+        Computer
+        <span class="result-score" data-computer-score>0</span>
+    </div>
+
+    <!-- Link to JS within the body, otherwise doesn't work :( -->
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
